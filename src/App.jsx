@@ -15,7 +15,7 @@ function App() {
   const [loggedIn, setLoggedIn] = useState(true)
 
   const toggleLogIn = () => {
-    setLoggedIn(current => !current)
+    setLoggedIn(!loggedIn)
   }
 
   if(loggedIn) {
