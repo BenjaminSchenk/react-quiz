@@ -1,15 +1,15 @@
 
 
 
-const Button = () => {
+const Button = ({toggleLogIn}) => {
 
     const handleClick = () => {
-        // run the toggleLogIn Prop function that hs been passed down from App.jsx
+        toggleLogIn()
     }
 
     return (
         
-        <h1>create a button and add handleClick callback </h1>
+        <button onClick={handleClick}>Login/Logout</button>
         
     )
 }
